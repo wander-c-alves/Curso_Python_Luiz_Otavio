@@ -14,15 +14,12 @@ Loop infinito -> Quando um código não tem fim
 #         break
 # print('Acabou')
 
-# condicao = True
-# while condicao:
+# while True:
 #     nome = input('Digite seu nome: ')
-#     if nome == 'sair':
+#     if nome.lower() == 'sair':
 #         break
-#     print(f'Seja bem vindo, {nome}!!!')
-    
-# print('Você saiu do sistema')
-
+#     print(f'{nome}, seja bem vindo!')
+# print('Até logo')
 
 while True:
     nome = input('Digite seu nome: ')
