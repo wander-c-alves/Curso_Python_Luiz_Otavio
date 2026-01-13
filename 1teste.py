@@ -15,7 +15,7 @@ try:
     elif operador == '/':
         if num2 != 0:
             resultado = num1/num2
-            print(f'O resultado da divisão é: {resultado}')
+            print(f'O resultado da divisão é: {resultado:.3}')
         else:
             print('Erro, não é possivel dividir por zero!!!')
     else:
