@@ -5,8 +5,8 @@ Não permita que o programa quebre com erros de indices inexistentes na lista.
 
 '''
 lista = []
-lista = input('Selecione uma opção: ')
-opcao = input('[i]nserir [a]pagar [listar]')
+print('Selecione uma opção: ')
+opcao = input('[i]nserir [a]pagar [listar]: ')
 
 
 
