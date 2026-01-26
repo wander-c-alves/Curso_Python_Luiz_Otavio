@@ -1,0 +1,23 @@
+'''
+Tipo tupla - uma lista imutavel
+
+'''
+#modelo tupla
+nomes = 'Maria', 'Helena', 'Luiz'
+print(nomes[1])
+
+#outro modelo tupla
+nomes = ('Maria', 'Helena', 'Luiz')
+print(nomes[1])
+
+#Convertendo lista em tupla
+nomes = ['Maria', 'Helena', 'Luiz']
+nomes = tuple(nomes)
+print(nomes[-1])
+print(nomes)
+
+#Convertendo tupla em lista
+nomes = 'Maria', 'Helena', 'Luiz'
+nomes = list(nomes)
+print(nomes[-1])
+print(nomes)
