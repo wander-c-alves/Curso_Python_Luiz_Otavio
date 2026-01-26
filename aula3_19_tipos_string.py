@@ -26,4 +26,4 @@ sera exibido: "pincesa"
 
 '''
 
-print('Explícito', 'é', 'melhor " do que implícito')
+print('Explícito', 'é', 'melhor " do que y implícito')
