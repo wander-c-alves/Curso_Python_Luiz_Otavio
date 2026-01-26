@@ -8,7 +8,7 @@ Strings são textos que estão dentro de aspas
 print(1234)
 
 
-# Aspas simples ''
+# Aspas simples  ' '
 print('Pincesa linda')
 print('Pincesa "linda"')
 
