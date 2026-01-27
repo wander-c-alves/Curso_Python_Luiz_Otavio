@@ -21,7 +21,7 @@ print("Pincesa \"linda\"")
 
 '''
 Se quiser que as aspas apareçam, pode colocar aspas dentro de aspas  
-EX: '"pincesa"'
+EX: '"pincesoca"'
 sera exibido: "pincesa"
 
 '''
