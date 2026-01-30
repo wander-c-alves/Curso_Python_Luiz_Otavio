@@ -9,7 +9,7 @@ print(1234)
 
 
 # Aspas simples  ' '
-print('Pincesa linda')
+print('Pincesa linda do papai')
 print('Pincesa "linda"')
 
 
@@ -21,7 +21,7 @@ print("Pincesa \"linda\"")
 
 '''
 Se quiser que as aspas apareçam, pode colocar aspas dentro de aspas  
-EX: '"A pincesoca"'
+EX: '"pincesoca"'
 sera exibido: "pincesa"
 
 '''
