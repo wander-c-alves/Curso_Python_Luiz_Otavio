@@ -14,7 +14,7 @@ print('Pincesa "linda"')
 
 
 # Aspas duplas ""
-print("Pincesa linda")
+print("Pincesa linda do papai")
 
 # Escape
 print("Pincesa \"linda\"")
