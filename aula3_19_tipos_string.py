@@ -9,7 +9,7 @@ print(1234)
 
 
 # Aspas simples  ' '
-print('Pincesa linda do papai')
+print('Pincesoca linda do papai')
 print('Pincesa "linda"')
 
 
