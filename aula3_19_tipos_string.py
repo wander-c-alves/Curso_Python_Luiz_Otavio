@@ -10,7 +10,7 @@ print(1234)
 
 # Aspas simples  ' '
 print('Pincesoca linda do papai')
-print('Pincesa "linda"')
+print('Pincesas "linda"')
 
 
 # Aspas duplas ""
