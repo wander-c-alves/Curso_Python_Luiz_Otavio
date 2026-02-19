@@ -15,7 +15,7 @@ O tipo float representa qualquer numero positivo ou negativo com ponto flutuante
 float sem sinal é considerado positivo
 '''
 print(1.1) # float
-print(0.0) # float
+print(0.01) # float
 print(-5.1) # float
 
 # A função tupe mostra o tipo que o python inferiu ao valor
