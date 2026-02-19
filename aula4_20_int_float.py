@@ -19,7 +19,7 @@ print(0.01) # float
 print(-5.1) # float
 
 # A função tupe mostra o tipo que o python inferiu ao valor
-print( type('wander'))
+print( type('wanderley'))
 print( type(1))
 print( type(1.1))
 
