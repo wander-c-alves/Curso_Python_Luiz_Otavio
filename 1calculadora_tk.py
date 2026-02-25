@@ -53,7 +53,7 @@ for r in range(1, 6):  # reduzi o número de linhas configuradas
     janela.grid_rowconfigure(r, weight=1, minsize=60)
 janela.grid_rowconfigure(5, minsize=45)  # rodapé menor
 
-# --- Lista de botões ----
+# --- Lista de botões ---
 botoes = [
     ('7', 1, 0), ('8', 1, 1), ('9', 1, 2), ('÷', 1, 3),
     ('4', 2, 0), ('5', 2, 1), ('6', 2, 2), ('×', 2, 3),
