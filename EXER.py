@@ -34,22 +34,31 @@
 # 🔹 Exercícios
 # 1.	Crie uma função que mostre seu nome.
 
-def mostrar_nome(nome):
-    print(f'meu nome é {nome}')
-mostrar_nome('wander')
+# def mostrar_nome(nome):
+#     print(f'meu nome é {nome}')
+# mostrar_nome('wander')
 
 # 2.	Crie uma função que receba dois números e mostre a multiplicação.
 
+# def multiplicar(n1,n2):
+#     resultado = n1*n2
+#     print(f'O resultado da multiplicação é {resultado}')
+# multiplicar(3,10)
 
 
 # 3.	Crie uma função que calcule a média de três notas.
 
-
-
+# def media(n1,n2,n3):
+#     media= (n1+n2+n3)/3
+#     print(f"A media das notas é {media}")
+# media(9,7,8)
 
 # 4.	Faça uma função que diga se um número é par.
 
-
+def numero(n1):
+    return 'par' if n1%2 == 0 else 'impar'
+resultado = numero(9)
+print(f'O numero é {resultado}')
 
 # 5.	Crie uma função que converta Celsius para Fahrenheit.
 
