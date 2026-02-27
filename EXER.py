@@ -131,13 +131,54 @@
 # 08. [NOME: mostrar_media_tres_notas]
 # Enunciado: Crie uma função que receba três notas de um aluno e exiba a média aritmética simples dessas notas.
 
-def media_notas(n1,n2,n3):
-    media = (n1+n2+n3)/3
-    print(f"A médoa das notas {n1}, {n2} e {n3} é {media}")
-media_notas(9,7,8)
+# def media_notas(n1,n2,n3):
+#     media = (n1+n2+n3)/3
+#     print(f"A médoa das notas {n1}, {n2} e {n3} é {media}")
+# media_notas(9,7,8)
 
+
+# def media_notas():
+#     n1 = float(input('Digite a primeira nota: '))
+#     n2 = float(input('Digite a segunda nota: '))
+#     n3 = float(input('Digite a terceira nota: '))
+    
+#     media = (n1 + n2 + n3) / 3
+#     print(f'A média das notas {n1}, {n2} e {n3} é {media:.2f}')
+# media_notas()
+    
+    
 # 09. [NOME: saudar_por_periodo]
-# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23). Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
+# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23). 
+# Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
+
+def saudacao(hora: int) -> str:
+
+    if hora < 12:
+        return "Bom dia"
+    elif hora >= 18:
+        return "Boa noite"
+    else:
+        return "Boa tarde"
+
+
+def main():
+    try:
+        hora = int(input("Digite a hora (0-23): "))
+        if 0 <= hora <= 23:   #if hora >= 0 and hora <= 23:
+            print(f"Hora digitada: {hora}") 
+            print(saudacao(hora))
+        else:
+            print("Por favor, digite um valor entre 0 e 23.")
+    except ValueError:
+        print("Entrada inválida. Digite apenas números inteiros.")
+
+
+# Executa o programa
+if __name__ == "__main__":
+    main()
+
+
+
 
 # 10. [NOME: verificar_par_ou_impar]
 # Enunciado: Crie uma função que receba um número inteiro e imprima no console se ele é "Par" ou "Ímpar".
