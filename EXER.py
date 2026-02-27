@@ -38,6 +38,16 @@
 #     print(f'meu nome é {nome}')
 # mostrar_nome('wander')
 
+def mostrar_nome()->str:
+    return 'Ola wander'
+
+def main():
+    mensagem = mostrar_nome()
+    print(mensagem)
+    
+if __name__ == '__main__':
+    main()
+
 # 2.	Crie uma função que receba dois números e mostre a multiplicação.
 
 # def multiplicar(n1,n2):
@@ -151,32 +161,36 @@
 # Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23). 
 # Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
 
-def saudacao(hora: int) -> str:
+# BLOCO 1: LÓGICA (A COZINHA)
+# def gerar_saudacao(nome: str, hora: int) -> str:
+#     if hora < 12:
+#         periodo = "Bom dia"
+#     elif 12 <= hora <= 17:
+#         periodo = "Boa tarde"
+#     else:
+#         periodo = "Boa noite"
 
-    if hora < 12:
-        return "Bom dia"
-    elif hora >= 18:
-        return "Boa noite"
-    else:
-        return "Boa tarde"
+#     return f"{periodo}, {nome}!" # Retorna a frase pronta
 
+# # BLOCO 2: INTERAÇÃO (O GARÇOM)
+# def main():
+#     try:
+#         usuario = input("Qual seu nome? ")
+#         h = int(input("Que horas são (0-23)? "))
 
-def main():
-    try:
-        hora = int(input("Digite a hora (0-23): "))
-        if 0 <= hora <= 23:   #if hora >= 0 and hora <= 23:
-            print(f"Hora digitada: {hora}") 
-            print(saudacao(hora))
-        else:
-            print("Por favor, digite um valor entre 0 e 23.")
-    except ValueError:
-        print("Entrada inválida. Digite apenas números inteiros.")
+#         if 0 <= h <= 23:
+#             # Chamamos a lógica e guardamos o retorno numa variável
+#             mensagem_final = gerar_saudacao(usuario, h)
+#             print(mensagem_final)
+#         else:
+#             print("Erro: A hora deve ser entre 0 e 23.")
 
+#     except ValueError:
+#         print("Erro: Digite um número inteiro para a hora.")
 
-# Executa o programa
-if __name__ == "__main__":
-    main()
-
+# # CHAVE DE IGNIÇÃO
+# if __name__ == "__main__":
+#     main()
 
 
 
