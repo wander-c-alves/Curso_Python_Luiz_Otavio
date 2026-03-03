@@ -1,7 +1,7 @@
 # TÓPICO 01 – FUNÇÕES (def)
 # 📌 O que é uma função?
 # Uma função é um bloco de código que executa uma tarefa específica.
-# Pense nela como uma “máquina”:
+# Pense nela como uma “ máquina”:
 # •	Você dá uma entrada
 # •	Ela processa
 # •	Ela devolve um resultado
@@ -34,26 +34,48 @@
 # 🔹 Exercícios
 # 1.	Crie uma função que mostre seu nome.
 
-# def mostrar_nome(nome):
-#     print(f'meu nome é {nome}')
-# mostrar_nome('wander')
+# def mostrar_nome() -> str:
+#     return 'Olá Wander'
 
-def mostrar_nome()->str:
-    return 'Ola wander'
+
+# def main():
+#     mensagem = mostrar_nome()
+#     print(mensagem)
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+def saudar_usuario(nome_recebido: str) -> str:
+    return f'Ola {nome_recebido}! Seja bem vindo.'
+
 
 def main():
-    mensagem = mostrar_nome()
-    print(mensagem)
-    
+    nome_usuario = input('Digite seu nome: ')
+    mensagem_final = saudar_usuario(nome_usuario)
+    print(mensagem_final)
+
+
 if __name__ == '__main__':
     main()
 
+
+
+
+
+
+    
 # 2.	Crie uma função que receba dois números e mostre a multiplicação.
 
 # def multiplicar(n1,n2):
 #     resultado = n1*n2
 #     print(f'O resultado da multiplicação é {resultado}')
 # multiplicar(3,10)
+
+# def multiplicar()->int:
+#     return 
+
 
 
 # 3.	Crie uma função que calcule a média de três notas.
