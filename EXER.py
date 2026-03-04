@@ -34,39 +34,35 @@
 # 🔹 Exercícios
 # 1.	Crie uma função que mostre seu nome.
 
-# def mostrar_nome() -> str:
-#     return 'Olá Wander'
-
-
-# def main():
-#     mensagem = mostrar_nome()
-#     print(mensagem)
-
-
-# if __name__ == '__main__':
-#     main()
-
-
 def saudar_usuario(nome_recebido: str) -> str:
     return f'Ola {nome_recebido}! Seja bem vindo.'
-
-
 def main():
     nome_usuario = input('Digite seu nome: ')
     mensagem_final = saudar_usuario(nome_usuario)
     print(mensagem_final)
-
-
 if __name__ == '__main__':
+    main()
+
+    
+# 2.	Crie uma função que receba dois números e mostre a multiplicação.
+
+def multiplicacao (n1: float, n2: float) -> float:
+    return n1 * n2
+def main():
+    try:
+        n1 = float(input('Digite o primeiro numero: '))
+        n2 = float(input('Digite o segundo numero: '))
+        resultado = multiplicacao(n1, n2)
+        print(f'O resultado da multiplicação é {resultado}')
+    except ValueError:
+        print('Erro: Por favor, digite apenas Numeros,')
+        
+if __name__ == '__main__': 
     main()
 
 
 
 
-
-
-    
-# 2.	Crie uma função que receba dois números e mostre a multiplicação.
 
 # def multiplicar(n1,n2):
 #     resultado = n1*n2
