@@ -34,59 +34,107 @@
 # 🔹 Exercícios
 # 1.	Crie uma função que mostre seu nome.
 
-def saudar_usuario(nome_recebido: str) -> str:
-    return f'Ola {nome_recebido}! Seja bem vindo.'
-def main():
-    nome_usuario = input('Digite seu nome: ')
-    mensagem_final = saudar_usuario(nome_usuario)
-    print(mensagem_final)
-if __name__ == '__main__':
-    main()
+# def saudar_usuario(nome_recebido: str) -> str:
+#     return f'Ola {nome_recebido}! Seja bem vindo.'
+# def main():
+#     nome_usuario = input('Digite seu nome: ')
+#     mensagem_final = saudar_usuario(nome_usuario)
+#     print(mensagem_final)
+# if __name__ == '__main__':
+#     main()
 
     
 # 2.	Crie uma função que receba dois números e mostre a multiplicação.
 
-def multiplicacao (n1: float, n2: float) -> float:
-    return n1 * n2
-def main():
-    try:
-        n1 = float(input('Digite o primeiro numero: '))
-        n2 = float(input('Digite o segundo numero: '))
-        resultado = multiplicacao(n1, n2)
-        print(f'O resultado da multiplicação é {resultado}')
-    except ValueError:
-        print('Erro: Por favor, digite apenas Numeros,')
+# def multiplicacao (n1: float, n2: float) -> float:
+#     return n1 * n2
+# def main():
+#     try:
+#         n1 = float(input('Digite o primeiro numero: '))
+#         n2 = float(input('Digite o segundo numero: '))
+#         resultado = multiplicacao(n1, n2)
+#         print(f'O resultado da multiplicação é {resultado}')
+#     except ValueError:
+#         print('Erro: Por favor, digite apenas Numeros,')
         
-if __name__ == '__main__': 
-    main()
-
-
-
-
-
-# def multiplicar(n1,n2):
-#     resultado = n1*n2
-#     print(f'O resultado da multiplicação é {resultado}')
-# multiplicar(3,10)
-
-# def multiplicar()->int:
-#     return 
-
+# if __name__ == '__main__': 
+#     main()
 
 
 # 3.	Crie uma função que calcule a média de três notas.
 
-# def media(n1,n2,n3):
-#     media= (n1+n2+n3)/3
-#     print(f"A media das notas é {media}")
-# media(9,7,8)
+# def calculo_notas(n1: float, n2: float, n3: float) -> float:
+#     return (n1 + n2 + n3) / 3
+# def main():
+#     try:
+#         n1 = float(input('Digite a primeira nota: '))
+#         n2 = float(input('Digite a segunda nota: '))
+#         n3 = float(input('Digite a terceira nota: '))
+        
+#         media = calculo_notas(n1,n2,n3)
+#         print(f'A media do aluno é {media:.2f}')
+                
+#     except ValueError:
+#         print('Erro: Digite apenas numeros')
+        
+# if __name__ == '__main__':
+#     main()
 
-# 4.	Faça uma função que diga se um número é par.
 
-# def numero(n1):
-#     return 'par' if n1 % 2 == 0 else 'impar'
-# resultado = numero(9)
-# print(f'O numero é {resultado}')
+#4.a Crie um programa que receba o ano de nascimento de uma 
+# pessoa e retorne se ela é "Maior de Idade" ou "Menor de Idade".
+
+# def idade_atual(ano_nasc: int) -> str:
+#     calculo =  2026 - ano_nasc
+#     if calculo >= 18:
+#         return 'Maior de idade'
+#     else:
+#         return 'Menor de idade'
+    
+
+# def main():
+#     try:
+#         ano_nasc = int(input('Digite seu ano de nascimento: '))
+#         idade = idade_atual(ano_nasc)
+#         print(idade)
+        
+#     except ValueError:
+#         print('Erro: Digite apenas numeros')
+        
+        
+# if __name__ == '__main__':
+#     main()
+
+
+
+# 4.b	Faça uma função que diga se um número é par.
+
+# def par_impar(numero: int) -> str:
+#     if numero % 2 == 0:
+#         return 'Par'
+#     else:
+#         return 'Impar'
+    
+    
+# def main():
+#     try:
+#         numero = int(input('Digite um numero: '))
+#         resultado = par_impar(numero)
+#         print(f' O numero {numero} é {resultado}')
+        
+#     except ValueError:
+#         print('Erro: Digite apenas numeros')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+
+
+
+
+
 
 # 5.	Crie uma função que converta Celsius para Fahrenheit.
 
