@@ -130,18 +130,15 @@
 #     main()
 
 
-
-
-
-
-
-
 # 5.	Crie uma função que converta Celsius para Fahrenheit.
 
-# def temp(c):
-#     far = (c * 1.8) + 32
-#     print(f'Aconversão é {far}')
-# temp(40)
+
+
+
+
+
+
+
 
 
 # 01. [NOME: saudar_aluno]
