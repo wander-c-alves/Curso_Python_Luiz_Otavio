@@ -132,16 +132,27 @@
 
 # 5.	Crie uma função que converta Celsius para Fahrenheit.
 
+# def temp (celsius: float) -> float: 
+#     return (celsius * 1.8) + 32
+
+
+# def main():
+#     try:
+#         celsius = float(input('Digite a temperatura em graus celsius: '))
+#         resultado = temp(celsius)
+#         print(f' {celsius} Graus celsius são {resultado:.2f} graus fahrenjeit')
+        
+#     except ValueError:
+#         print('Erro: digite apenas numeros')
+        
+        
+# if __name__ == '__main__':
+#     main()
 
 
 
 
-
-
-
-
-
-# 01. [NOME: saudar_aluno]
+# 06. [NOME: saudar_aluno]
 # Enunciado: Escreva uma função que, ao ser chamada, imprima a frase: "Olá! Bem-vindo ao curso de Python."
 
 # def saudar_aluno(msg):
@@ -150,7 +161,7 @@
 
 
 
-# 02. [NOME: saudar_usuario]
+# 07. [NOME: saudar_usuario]
 # Enunciado: Crie uma função que receba um nome como parâmetro (argumento) e exiba: "Olá, [nome]! Prazer em te ver."
 
 # def saudar_usuario(nome):
@@ -159,7 +170,7 @@
 
 
 
-# 03. [NOME: calcular_dobro]
+# 08. [NOME: calcular_dobro]
 # Enunciado: Escreva uma função que receba um número e imprima o resultado do seu dobro.
 
 # def calcular_dobro(n1):
@@ -168,7 +179,7 @@
 # calcular_dobro(8)
 
 
-# 04. [NOME: somar_dois_numeros]
+# 09. [NOME: somar_dois_numeros]
 # Enunciado: Crie uma função que receba dois números como parâmetros e mostre a soma entre eles.
 
 # def soma_numeros(n1,n2):
@@ -177,7 +188,7 @@
 # soma_numeros(4,5)
 
 
-# 05. [NOME: calcular_area_quadrado]
+# 10. [NOME: calcular_area_quadrado]
 # Enunciado: Escreva uma função que receba o valor do lado de um quadrado e exiba a área (Lado * Lado).
 
 # def area_quad(lado):
@@ -185,7 +196,7 @@
 #     print(f"A area do quadrado é {area}")
 # area_quad(4)
 
-# 06. [NOME: metros_para_centimetros]
+# 11. [NOME: metros_para_centimetros]
 # Enunciado: Crie uma função que receba um valor em metros e mostre o valor convertido para centímetros.
 
 # def conversao(metros):
@@ -193,7 +204,7 @@
 #     print(f"{metros} metro(s) são {cent} centimetros")
 # conversao(2)
 
-# 07. [NOME: verificar_maioridade]
+# 12. [NOME: verificar_maioridade]
 # Enunciado: Escreva uma função que receba uma idade e imprima se a pessoa é "Maior de idade" (18 ou mais) ou "Menor de idade".
 
 # def verf_idade(idade):
@@ -201,7 +212,7 @@
 # resultado = verf_idade(65)
 # print(resultado)
 
-# 08. [NOME: mostrar_media_tres_notas]
+# 13. [NOME: mostrar_media_tres_notas]
 # Enunciado: Crie uma função que receba três notas de um aluno e exiba a média aritmética simples dessas notas.
 
 # def media_notas(n1,n2,n3):
@@ -220,7 +231,7 @@
 # media_notas()
     
     
-# 09. [NOME: saudar_por_periodo]
+# 14. [NOME: saudar_por_periodo]
 # Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23). 
 # Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
 
@@ -257,35 +268,35 @@
 
 
 
-# 10. [NOME: verificar_par_ou_impar]
+# 15. [NOME: verificar_par_ou_impar]
 # Enunciado: Crie uma função que receba um número inteiro e imprima no console se ele é "Par" ou "Ímpar".
 
-# 11. [NOME: obter_soma]
+# 16. [NOME: obter_soma]
 # Enunciado: Escreva uma função que receba dois números e retorne (use o comando return) a soma deles. Fora da função, armazene o resultado em uma variável e a imprima.
 
-# 12. [NOME: calcular_imc]
+# 17. [NOME: calcular_imc]
 # Enunciado: Crie uma função que receba o peso e a altura de uma pessoa e retorne o valor do IMC (Peso / Altura²).
 
-# 13. [NOME: quem_e_o_maior]
+# 18. [NOME: quem_e_o_maior]
 # Enunciado: Escreva uma função que receba dois números e retorne qual deles é o maior. Se forem iguais, retorne qualquer um.
 
-# 14. [NOME: tamanho_do_nome]
+# 19. [NOME: tamanho_do_nome]
 # Enunciado: Crie uma função que receba uma string (texto) e retorne a quantidade de caracteres que ela possui.
 
-# 15. [NOME: gerar_preco_com_desconto]
+# 20. [NOME: gerar_preco_com_desconto]
 # Enunciado: Escreva uma função que receba o valor de um produto e a porcentagem de desconto (ex: 10 para 10%). Retorne o valor final do produto com o desconto aplicado.
 
-# 16. [NOME: celsius_para_fahrenheit]
+# 21. [NOME: celsius_para_fahrenheit]
 # Enunciado: Crie uma função que receba uma temperatura em graus Celsius e retorne a conversão para Fahrenheit. (Fórmula: F = C * 1.8 + 32)
 
-# 17. [NOME: criar_lista_pares]
+# 22. [NOME: criar_lista_pares]
 # Enunciado: Escreva uma função que receba um número limite e imprima todos os números pares de 0 até o limite informado.
 
-# 18. [NOME: validar_acesso]
+# 23. [NOME: validar_acesso]
 # Enunciado: Crie uma função que receba uma string de senha. Se for igual a "python123", retorne "Acesso Liberado". Caso contrário, retorne "Acesso Negado".
 
-# 19. [NOME: inverter_texto]
+# 24. [NOME: inverter_texto]
 # Enunciado: Escreva uma função que receba uma palavra e a imprima de trás para frente (invertida).
 
-# 20. [NOME: operacao_matematica]
+# 25. [NOME: operacao_matematica]
 # Enunciado: Crie uma função que receba dois números e uma string representando a operação ("+", "-", "*", "/"). A função deve realizar o cálculo e exibir o resultado final.
