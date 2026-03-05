@@ -173,33 +173,85 @@
 # Enunciado: Crie uma função que receba um nome como parâmetro (argumento) 
 # e exiba: "Olá, [nome]! Prazer em te ver."
 
-def saudar_usuario(nome: str) -> str:
-    return  f'Olá {nome}! Prazer em te ver.'
+# def saudar_usuario(nome: str) -> str:
+#     return  f'Olá {nome}! Prazer em te ver.'
+
+
+# def main():
+#     nome = input('Digite seu nome: ')
+#     resultado = saudar_usuario(nome)
+#     print(resultado)
+    
+    
+# if __name__ == '__main__':
+#     main()
+
+
+# 08. [NOME: calcular_dobro]
+# Enunciado: Escreva uma função que receba um número e imprima o resultado do seu dobro.
+
+# def calcular_dobro(n1: float) -> float:
+#     return n1 * 2
+
+
+# def main():
+#     try:
+#         n1 = float(input('Digite um numero: '))
+#         resultado = calcular_dobro(n1)
+#         print(f'O dobro de {n1} é {resultado}')
+#     except ValueError:
+#         print('Erro: digite apenas numeros')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+# 09. [NOME: somar_dois_numeros]
+# Enunciado: Crie uma função que receba dois números como parâmetros e mostre a soma entre eles.
+
+# def somar_dois_numeros(n1: float, n2: float) -> float:
+#     return n1 + n2
+
+
+# def main():
+#     try:
+#         n1 = float(input('Digite o primeiro número: '))
+#         n2 = float(input('Digite o segundo número: '))
+    
+#         soma = somar_dois_numeros(n1, n2)
+#         print(f'A soma de {n1} e {n2} é {soma}')
+#     except ValueError:
+#         print('Erro, digite apenas números.')
+        
+        
+# if __name__ == '__main__':
+#     main()    
+
+
+# 10. [NOME: calcular_area_quadrado]
+# Enunciado: Escreva uma função que receba o valor do lado 
+# de um quadrado e exiba a área (Lado * Lado) ou (lado ** 2).
+
+def area_quadrado(lado: float) -> float:
+    return lado ** 2
 
 
 def main():
-    nome = input('Digite seu nome: ')
-    resultado = saudar_usuario(nome)
-    print(resultado)
+    try:
+        lado = float(input('Digite a medida do lado do quadrado: '))
+        resultado = area_quadrado(lado)
+        print(f'A area do quadrado é {resultado}')
+        
+    except ValueError:
+        print('Erro: digite apenas numeros')
     
     
 if __name__ == '__main__':
     main()
 
 
-# 08. [NOME: calcular_dobro]
-# Enunciado: Escreva uma função que receba um número e imprima o resultado do seu dobro.
 
-
-
-# 09. [NOME: somar_dois_numeros]
-# Enunciado: Crie uma função que receba dois números como parâmetros e mostre a soma entre eles.
-
-
-
-
-# 10. [NOME: calcular_area_quadrado]
-# Enunciado: Escreva uma função que receba o valor do lado de um quadrado e exiba a área (Lado * Lado).
 
 
 
