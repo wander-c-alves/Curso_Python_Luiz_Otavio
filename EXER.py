@@ -150,85 +150,76 @@
 #     main()
 
 
-
-
 # 06. [NOME: saudar_aluno]
-# Enunciado: Escreva uma função que, ao ser chamada, imprima a frase: "Olá! Bem-vindo ao curso de Python."
+# Enunciado: Escreva uma função que, ao ser chamada, 
+# imprima a frase: "Olá! Bem-vindo ao curso de Python."
 
-# def saudar_aluno(msg):
-#     print(msg)
-# saudar_aluno('Olá! Bem-vindo ao curso de Python')
+# def saudar_aluno() -> str:
+#     return 'Olá, bem vindo ao curso de Python!!'
+
+
+# def main():
+#     mensagem = saudar_aluno()
+#     print(mensagem)
+    
+    
+# if __name__ == '__main__':
+#     main()
+
 
 
 
 # 07. [NOME: saudar_usuario]
-# Enunciado: Crie uma função que receba um nome como parâmetro (argumento) e exiba: "Olá, [nome]! Prazer em te ver."
+# Enunciado: Crie uma função que receba um nome como parâmetro (argumento) 
+# e exiba: "Olá, [nome]! Prazer em te ver."
 
-# def saudar_usuario(nome):
-#     print(f'Ola {nome}! Prazer em te ver')
-# saudar_usuario('wander')
+def saudar_usuario(nome: str) -> str:
+    return  f'Olá {nome}! Prazer em te ver.'
 
+
+def main():
+    nome = input('Digite seu nome: ')
+    resultado = saudar_usuario(nome)
+    print(resultado)
+    
+    
+if __name__ == '__main__':
+    main()
 
 
 # 08. [NOME: calcular_dobro]
 # Enunciado: Escreva uma função que receba um número e imprima o resultado do seu dobro.
 
-# def calcular_dobro(n1):
-#     dobro = n1 * 2
-#     print(f'O dobro de {n1} é {dobro}')
-# calcular_dobro(8)
 
 
 # 09. [NOME: somar_dois_numeros]
 # Enunciado: Crie uma função que receba dois números como parâmetros e mostre a soma entre eles.
 
-# def soma_numeros(n1,n2):
-#     soma = n1+n2
-#     print(f'A soma de {n1} e {n2} é {soma}')
-# soma_numeros(4,5)
+
 
 
 # 10. [NOME: calcular_area_quadrado]
 # Enunciado: Escreva uma função que receba o valor do lado de um quadrado e exiba a área (Lado * Lado).
 
-# def area_quad(lado):
-#     area = lado * lado
-#     print(f"A area do quadrado é {area}")
-# area_quad(4)
+
 
 # 11. [NOME: metros_para_centimetros]
 # Enunciado: Crie uma função que receba um valor em metros e mostre o valor convertido para centímetros.
 
-# def conversao(metros):
-#     cent = metros * 100
-#     print(f"{metros} metro(s) são {cent} centimetros")
-# conversao(2)
+
 
 # 12. [NOME: verificar_maioridade]
 # Enunciado: Escreva uma função que receba uma idade e imprima se a pessoa é "Maior de idade" (18 ou mais) ou "Menor de idade".
 
-# def verf_idade(idade):
-#     return 'Maior de idade' if idade >= 18 else 'Menor de idade'
-# resultado = verf_idade(65)
-# print(resultado)
+
 
 # 13. [NOME: mostrar_media_tres_notas]
 # Enunciado: Crie uma função que receba três notas de um aluno e exiba a média aritmética simples dessas notas.
 
-# def media_notas(n1,n2,n3):
-#     media = (n1+n2+n3)/3
-#     print(f"A médoa das notas {n1}, {n2} e {n3} é {media}")
-# media_notas(9,7,8)
 
 
-# def media_notas():
-#     n1 = float(input('Digite a primeira nota: '))
-#     n2 = float(input('Digite a segunda nota: '))
-#     n3 = float(input('Digite a terceira nota: '))
-    
-#     media = (n1 + n2 + n3) / 3
-#     print(f'A média das notas {n1}, {n2} e {n3} é {media:.2f}')
-# media_notas()
+
+
     
     
 # 14. [NOME: saudar_por_periodo]
