@@ -330,34 +330,34 @@
 # Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23).
 # Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
 
-# def saudar_por_periodo(nome: str, hora: int) -> str:
-#     if hora < 12:
-#         periodo = 'Bom dia'
-#     elif hora <= 17:
-#         periodo = 'Boa tarde'
-#     else:
-#         periodo = 'Boa noite'
+def saudar_por_periodo(nome: str, hora: int) -> str:
+    if hora < 12:
+        periodo = 'Bom dia'
+    elif hora <= 17:
+        periodo = 'Boa tarde'
+    else:
+        periodo = 'Boa noite'
 
-#     return f'{periodo}, {nome}!'
-
-
-# def main():
-#     try:
-#         nome_usuario = input('Qual o seu nome? ')
-#         hora = int(input('Digite a hora (0-23): '))
-
-#         if 0 <= hora <= 23:
-#             resultado = saudar_por_periodo(nome_usuario, hora)
-#             print(resultado)
-#         else:
-#             print('Erro: A hora deve estar entre 0 e 23.')
-
-#     except ValueError:
-#         print('Erro: Digite um número inteiro para a hora.')
+    return f'{periodo}, {nome}!'
 
 
-# if __name__ == '__main__':
-#     main()
+def main():
+    try:
+        nome_usuario = input('Qual o seu nome? ')
+        hora = int(input('Digite a hora (0-23): '))
+
+        if 0 <= hora <= 23:
+            resultado = saudar_por_periodo(nome_usuario, hora)
+            print(resultado)
+        else:
+            print('Erro: A hora deve estar entre 0 e 23.')
+
+    except ValueError:
+        print('Erro: Digite um número inteiro para a hora.')
+
+
+if __name__ == '__main__':
+    main()
 
 
 
