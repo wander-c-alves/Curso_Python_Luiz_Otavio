@@ -2,15 +2,15 @@
 # 📌 O que é uma função?
 # Uma função é um bloco de código que executa uma tarefa específica.
 # Pense nela como uma “ máquina”:
-# •	Você dá uma entrada
-# •	Ela processa
-# •	Ela devolve um resultado
+# • Você dá uma entrada
+# • Ela processa
+# • Ela devolve um resultado
 # ________________________________________
 # 🧠 Por que usar funções?
-# •	Evita repetição de código
-# •	Organiza o programa
-# •	Facilita manutenção
-# •	Deixa o código mais profissional
+# • Evita repetição de código
+# • Organiza o programa
+# • Facilita manutenção
+# • Deixa o código mais profissional
 # ________________________________________
 # 🔹 Estrutura básica
 # def nome_da_funcao():
@@ -32,7 +32,7 @@
 # print(resultado)
 # ________________________________________
 # 🔹 Exercícios
-# 1.	Crie uma função que mostre seu nome.
+# 1.    Crie uma função que mostre seu nome.
 
 # def saudar_usuario(nome_recebido: str) -> str:
 #     return f'Ola {nome_recebido}! Seja bem vindo.'
@@ -43,8 +43,8 @@
 # if __name__ == '__main__':
 #     main()
 
-    
-# 2.	Crie uma função que receba dois números e mostre a multiplicação.
+
+# 2.    Crie uma função que receba dois números e mostre a multiplicação.
 
 # def multiplicacao (n1: float, n2: float) -> float:
 #     return n1 * n2
@@ -56,12 +56,12 @@
 #         print(f'O resultado da multiplicação é {resultado}')
 #     except ValueError:
 #         print('Erro: Por favor, digite apenas Numeros,')
-        
-# if __name__ == '__main__': 
+
+# if __name__ == '__main__':
 #     main()
 
 
-# 3.	Crie uma função que calcule a média de três notas.
+# 3.    Crie uma função que calcule a média de três notas.
 
 # def calculo_notas(n1: float, n2: float, n3: float) -> float:
 #     return (n1 + n2 + n3) / 3
@@ -70,18 +70,18 @@
 #         n1 = float(input('Digite a primeira nota: '))
 #         n2 = float(input('Digite a segunda nota: '))
 #         n3 = float(input('Digite a terceira nota: '))
-        
+
 #         media = calculo_notas(n1,n2,n3)
 #         print(f'A media do aluno é {media:.2f}')
-                
+
 #     except ValueError:
 #         print('Erro: Digite apenas numeros')
-        
+
 # if __name__ == '__main__':
 #     main()
 
 
-#4.a Crie um programa que receba o ano de nascimento de uma 
+#4.a Crie um programa que receba o ano de nascimento de uma
 # pessoa e retorne se ela é "Maior de Idade" ou "Menor de Idade".
 
 # def idade_atual(ano_nasc: int) -> str:
@@ -90,38 +90,38 @@
 #         return 'Maior de idade'
 #     else:
 #         return 'Menor de idade'
-    
+
 
 # def main():
 #     try:
 #         ano_nasc = int(input('Digite seu ano de nascimento: '))
 #         idade = idade_atual(ano_nasc)
 #         print(idade)
-        
+
 #     except ValueError:
 #         print('Erro: Digite apenas numeros')
-        
-        
+
+
 # if __name__ == '__main__':
 #     main()
 
 
 
-# 4.b	Faça uma função que diga se um número é par.
+# 4.b   Faça uma função que diga se um número é par.
 
 # def par_impar(numero: int) -> str:
 #     if numero % 2 == 0:
 #         return 'Par'
 #     else:
 #         return 'Impar'
-    
-    
+
+
 # def main():
 #     try:
 #         numero = int(input('Digite um numero: '))
 #         resultado = par_impar(numero)
 #         print(f' O numero {numero} é {resultado}')
-        
+
 #     except ValueError:
 #         print('Erro: Digite apenas numeros')
 
@@ -130,9 +130,9 @@
 #     main()
 
 
-# 5.	Crie uma função que converta Celsius para Fahrenheit.
+# 5.    Crie uma função que converta Celsius para Fahrenheit.
 
-# def temp (celsius: float) -> float: 
+# def temp (celsius: float) -> float:
 #     return (celsius * 1.8) + 32
 
 
@@ -141,17 +141,17 @@
 #         celsius = float(input('Digite a temperatura em graus celsius: '))
 #         resultado = temp(celsius)
 #         print(f' {celsius} Graus celsius são {resultado:.2f} graus fahrenjeit')
-        
+
 #     except ValueError:
 #         print('Erro: digite apenas numeros')
-        
-        
+
+
 # if __name__ == '__main__':
 #     main()
 
 
 # 06. [NOME: saudar_aluno]
-# Enunciado: Escreva uma função que, ao ser chamada, 
+# Enunciado: Escreva uma função que, ao ser chamada,
 # imprima a frase: "Olá! Bem-vindo ao curso de Python."
 
 # def saudar_aluno() -> str:
@@ -161,8 +161,8 @@
 # def main():
 #     mensagem = saudar_aluno()
 #     print(mensagem)
-    
-    
+
+
 # if __name__ == '__main__':
 #     main()
 
@@ -170,7 +170,7 @@
 
 
 # 07. [NOME: saudar_usuario]
-# Enunciado: Crie uma função que receba um nome como parâmetro (argumento) 
+# Enunciado: Crie uma função que receba um nome como parâmetro (argumento)
 # e exiba: "Olá, [nome]! Prazer em te ver."
 
 # def saudar_usuario(nome: str) -> str:
@@ -181,8 +181,8 @@
 #     nome = input('Digite seu nome: ')
 #     resultado = saudar_usuario(nome)
 #     print(resultado)
-    
-    
+
+
 # if __name__ == '__main__':
 #     main()
 
@@ -218,37 +218,37 @@
 #     try:
 #         n1 = float(input('Digite o primeiro número: '))
 #         n2 = float(input('Digite o segundo número: '))
-    
+
 #         soma = somar_dois_numeros(n1, n2)
 #         print(f'A soma de {n1} e {n2} é {soma}')
 #     except ValueError:
 #         print('Erro, digite apenas números.')
-        
-        
+
+
 # if __name__ == '__main__':
-#     main()    
+#     main()
 
 
 # 10. [NOME: calcular_area_quadrado]
-# Enunciado: Escreva uma função que receba o valor do lado 
+# Enunciado: Escreva uma função que receba o valor do lado
 # de um quadrado e exiba a área (Lado * Lado) ou (lado ** 2).
 
-def area_quadrado(lado: float) -> float:
-    return lado ** 2
+# def area_quadrado(lado: float) -> float:
+#     return lado ** 2
 
 
-def main():
-    try:
-        lado = float(input('Digite a medida do lado do quadrado: '))
-        resultado = area_quadrado(lado)
-        print(f'A area do quadrado é {resultado}')
-        
-    except ValueError:
-        print('Erro: digite apenas numeros')
-    
-    
-if __name__ == '__main__':
-    main()
+# def main():
+#     try:
+#         lado = float(input('Digite a medida do lado do quadrado: '))
+#         resultado = area_quadrado(lado)
+#         print(f'A area do quadrado é {resultado}')
+
+#     except ValueError:
+#         print('Erro: digite apenas numeros')
+
+
+# if __name__ == '__main__':
+#     main()
 
 
 
@@ -256,58 +256,110 @@ if __name__ == '__main__':
 
 
 # 11. [NOME: metros_para_centimetros]
-# Enunciado: Crie uma função que receba um valor em metros e mostre o valor convertido para centímetros.
+# Enunciado: Crie uma função que receba um valor em metros e mostre o valor convertido para centímetros (m * 100).
+
+
+# def metros_para_centimetros(metros: float) -> float:
+#     return metros * 100
+
+
+# def main():
+#     try:
+#       metros = float(input('Digite quantos metros você quer converter: '))
+#       resultado = metros_para_centimetros(metros)
+#       print(f'{metros} convertidos para centimetros são {resultado}')
+#     except ValueError:
+#       print('Erro: digite apenas numeros')
+
+
+# if __name__ == '__main__':
+#     main()
+
 
 
 
 # 12. [NOME: verificar_maioridade]
 # Enunciado: Escreva uma função que receba uma idade e imprima se a pessoa é "Maior de idade" (18 ou mais) ou "Menor de idade".
 
+# def verificar_maioridade(idade: int) -> str:
+#     if idade >= 18:
+#         return 'Maior de idade'
+#     else:
+#         return 'Menor de idade'
+
+
+# def main():
+#     try:
+#         idade = int(input('Digite a sua idade: '))
+#         resultado = verificar_maioridade(idade)
+#         print(resultado)
+
+#     except ValueError:
+#         print('Erro: Digite apenas números')
+
+
+# if __name__ == '__main__':
+#     main()
+
 
 
 # 13. [NOME: mostrar_media_tres_notas]
 # Enunciado: Crie uma função que receba três notas de um aluno e exiba a média aritmética simples dessas notas.
 
+# def media_notas(n1: float, n2: float, n3: float) -> float:
+#     return (n1+n2+n3) / 3
 
 
-
-
-    
-    
-# 14. [NOME: saudar_por_periodo]
-# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23). 
-# Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
-
-# BLOCO 1: LÓGICA (A COZINHA)
-# def gerar_saudacao(nome: str, hora: int) -> str:
-#     if hora < 12:
-#         periodo = "Bom dia"
-#     elif 12 <= hora <= 17:
-#         periodo = "Boa tarde"
-#     else:
-#         periodo = "Boa noite"
-
-#     return f"{periodo}, {nome}!" # Retorna a frase pronta
-
-# # BLOCO 2: INTERAÇÃO (O GARÇOM)
 # def main():
 #     try:
-#         usuario = input("Qual seu nome? ")
-#         h = int(input("Que horas são (0-23)? "))
-
-#         if 0 <= h <= 23:
-#             # Chamamos a lógica e guardamos o retorno numa variável
-#             mensagem_final = gerar_saudacao(usuario, h)
-#             print(mensagem_final)
-#         else:
-#             print("Erro: A hora deve ser entre 0 e 23.")
+#         n1 = float(input('Digite a primeira nota: '))
+#         n2 = float(input('Digite a segunda nota: '))
+#         n3 = float(input('Digite a terceira nota: '))
+#         resultado = media_notas(n1, n2, n3)
+#         print(f'A média das notas {n1}, {n2} e {n3} é {resultado:.2f}')
 
 #     except ValueError:
-#         print("Erro: Digite um número inteiro para a hora.")
+#         print('Erro: digite apenas numeros')
 
-# # CHAVE DE IGNIÇÃO
+
 # if __name__ == "__main__":
 #     main()
+
+
+# 14. [NOME: saudar_por_periodo]
+# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23).
+# Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
+
+# def saudar_por_periodo(nome: str, hora: int) -> str:
+#     if hora < 12:
+#         periodo = 'Bom dia'
+#     elif hora <= 17:
+#         periodo = 'Boa tarde'
+#     else:
+#         periodo = 'Boa noite'
+
+#     return f'{periodo}, {nome}!'
+
+
+# def main():
+#     try:
+#         nome_usuario = input('Qual o seu nome? ')
+#         hora = int(input('Digite a hora (0-23): '))
+
+#         if 0 <= hora <= 23:
+#             resultado = saudar_por_periodo(nome_usuario, hora)
+#             print(resultado)
+#         else:
+#             print('Erro: A hora deve estar entre 0 e 23.')
+
+#     except ValueError:
+#         print('Erro: Digite um número inteiro para a hora.')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
 
 
 
@@ -315,7 +367,8 @@ if __name__ == '__main__':
 # Enunciado: Crie uma função que receba um número inteiro e imprima no console se ele é "Par" ou "Ímpar".
 
 # 16. [NOME: obter_soma]
-# Enunciado: Escreva uma função que receba dois números e retorne (use o comando return) a soma deles. Fora da função, armazene o resultado em uma variável e a imprima.
+# Enunciado: Escreva uma função que receba dois números e retorne (use o comando return) a soma deles.
+# Fora da função, armazene o resultado em uma variável e a imprima.
 
 # 17. [NOME: calcular_imc]
 # Enunciado: Crie uma função que receba o peso e a altura de uma pessoa e retorne o valor do IMC (Peso / Altura²).
@@ -327,7 +380,8 @@ if __name__ == '__main__':
 # Enunciado: Crie uma função que receba uma string (texto) e retorne a quantidade de caracteres que ela possui.
 
 # 20. [NOME: gerar_preco_com_desconto]
-# Enunciado: Escreva uma função que receba o valor de um produto e a porcentagem de desconto (ex: 10 para 10%). Retorne o valor final do produto com o desconto aplicado.
+# Enunciado: Escreva uma função que receba o valor de um produto e a porcentagem de desconto (ex: 10 para 10%).
+# Retorne o valor final do produto com o desconto aplicado.
 
 # 21. [NOME: celsius_para_fahrenheit]
 # Enunciado: Crie uma função que receba uma temperatura em graus Celsius e retorne a conversão para Fahrenheit. (Fórmula: F = C * 1.8 + 32)
@@ -342,4 +396,6 @@ if __name__ == '__main__':
 # Enunciado: Escreva uma função que receba uma palavra e a imprima de trás para frente (invertida).
 
 # 25. [NOME: operacao_matematica]
-# Enunciado: Crie uma função que receba dois números e uma string representando a operação ("+", "-", "*", "/"). A função deve realizar o cálculo e exibir o resultado final.
+# Enunciado: Crie uma função que receba dois números e uma string representando a operação ("+", "-", "*", "/").
+# A função deve realizar o cálculo e exibir o resultado final.
+
