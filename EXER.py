@@ -339,31 +339,28 @@ def saudar_por_periodo(nome: str, hora: int) -> str:
     else:
         periodo = 'Boa noite'
         
-    return f'{periodo}, {nome}!'
+    return f'{periodo}, {nome}'
 
 
 def main():
     
     try:
         nome = input('Digite seu nome: ')
-        hora = int(input('Digite um horario entre 0 - 23: '))
+        hora = int(input('Digite uma hora entre 0-23 : '))
         
         if 0 <= hora <= 23:
             resultado = saudar_por_periodo(nome, hora)
             print(resultado)
             
         else:
-            print('Erro: A hora deve estar entre 0 e 23 !!!')
+            print('Erro: Digite apenas numeros entre 0 - 23 !!!')
                 
     except ValueError:
-        print('Erro: Digite um numero inteiro para a hora. ')
-        
+        print('Erro: Digite apenas numeros inteiros para a hora !!!')
+
 
 if __name__ == '__main__':
     main()
-
-
-
 
 
 
