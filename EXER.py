@@ -346,8 +346,11 @@ def main():
     
     try:
         nome = input('Digite seu nome: ')
-        hora = int(input('Digite uma hora entre 0-23 : '))
+        if nome.strip().isdigit() or nome == "":
+            print('Erro: O nome não pode ser apenas números ou ficar vazio.')
+            return
         
+        hora = int(input('Digite uma hora entre 0-23 : '))
         if 0 <= hora <= 23:
             resultado = saudar_por_periodo(nome, hora)
             print(resultado)
