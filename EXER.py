@@ -327,7 +327,7 @@
 
 
 # 14. [NOME: saudar_por_periodo]
-# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23).
+# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23)
 # Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
 
 def saudar_por_periodo(nome: str, hora: int) -> str:
