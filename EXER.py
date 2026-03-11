@@ -448,7 +448,34 @@
 # 18. [NOME: quem_e_o_maior]
 # Enunciado: Escreva uma função que receba dois números e retorne qual deles é o maior. Se forem iguais, retorne qualquer um.
 
+def quem_e_o_maior(n1: int, n2: int) -> int:
+    
+    if n1 > n2:
+        maior = n1
+    else:
+        maior = n2
 
+    return maior
+
+
+def main():
+    
+    try: 
+        n1 = int(input('Digite o primeiro número:'))
+        n2 = int(input('Digite o segundo número: '))
+        
+        resultado = quem_e_o_maior(n1, n2)
+        if n1 == n2:
+            print(f'Os números são iguais: {resultado}')
+        else:
+            print(f'O número maior é: {resultado}')
+        
+    except ValueError:
+        print('Erro: Digite apenas numeros inteiros!')
+        
+
+if __name__ == '__main__':
+    main()
 
 
 # 19. [NOME: tamanho_do_nome]
