@@ -251,10 +251,6 @@
 #     main()
 
 
-
-
-
-
 # 11. [NOME: metros_para_centimetros]
 # Enunciado: Crie uma função que receba um valor em metros e mostre o valor convertido para centímetros (m * 100).
 
@@ -327,59 +323,133 @@
 
 
 # 14. [NOME: saudar_por_periodo]
-# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23)
+# Enunciado: Escreva uma função que receba um nome e uma hora (0 a 23).
 # Se a hora for menor que 12, diga "Bom dia, [nome]". Se for entre 12 e 17, "Boa tarde, [nome]". Caso contrário, "Boa noite, [nome]".
 
-def saudar_por_periodo(nome: str, hora: int) -> str:
-    
-    if hora < 12:
-        periodo = 'Bom dia'
-    elif hora <= 17:
-        periodo = 'Boa tarde'
-    else:
-        periodo = 'Boa noite'
-        
-    return f'{periodo}, {nome}'
+# def saudar_por_periodo(nome: str, hora: int) -> str:
 
+#     if hora < 12:
+#         periodo = 'Bom dia'
+#     elif hora <= 17:
+#         periodo = 'Boa tarde'
+#     else:
+#         periodo = 'Boa noite'
 
-def main():
-    
-    try:
-        nome = input('Digite seu nome: ')
-        if nome.strip().isdigit() or nome == "":
-            print('Erro: O nome não pode ser apenas números ou ficar vazio.')
-            return
-        
-        hora = int(input('Digite uma hora entre 0-23 : '))
-        if 0 <= hora <= 23:
-            resultado = saudar_por_periodo(nome, hora)
-            print(resultado)
-            
-        else:
-            print('Erro: Digite apenas numeros entre 0 - 23 !!!')
-                
-    except ValueError:
-        print('Erro: Digite apenas numeros inteiros para a hora !!!')
+#     return f'{periodo}, {nome}'
 
+# def main():
+#     try:
+#         nome = input('Digite seu nome: ')
+#         hora = int(input('Digite uma hora entre 0-23: '))
 
-if __name__ == '__main__':
-    main()
+#         if 0<= hora <= 23:
+#             resultado = saudar_por_periodo(nome, hora)
+#             print(resultado)
+#         else:
+#             print('Erro: inserir um horario entre 0 e 23!')
 
+#     except ValueError:
+#         print('Erro: inserir apenas numeros inteiros!')
 
+# if __name__ == '__main__':
+#     main()
 
 
 # 15. [NOME: verificar_par_ou_impar]
 # Enunciado: Crie uma função que receba um número inteiro e imprima no console se ele é "Par" ou "Ímpar".
 
+# def verificar_par_impar(numero: int) -> str:
+
+#     if numero % 2 == 0:
+#         calculo = "Par"
+#     else:
+#         calculo = 'Impar'
+#     return f'{calculo}'
+
+
+# def main():
+#     try:
+#         numero = int(input('Digite um número: '))
+#         resultado = verificar_par_impar(numero)
+#         print(resultado)
+
+#     except ValueError:
+#         print('Erro: Digite apenas numeros!!!')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+
 # 16. [NOME: obter_soma]
 # Enunciado: Escreva uma função que receba dois números e retorne (use o comando return) a soma deles.
 # Fora da função, armazene o resultado em uma variável e a imprima.
 
+# def obter_soma(n1: float, n2: float) -> float:
+#     return n1 + n2
+
+
+# def main():
+#     try:
+#         n1 = float(input('Digite o primeiro numero: '))
+#         n2 = float(input('Digite o segundo numero: '))
+#         resultado = obter_soma(n1, n2)
+#         print(f'A soma dos numeros {n1} e {n2} é {resultado}')
+
+#     except ValueError:
+#         print('Erro: Digite apenas números!')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+
+
+
+
 # 17. [NOME: calcular_imc]
 # Enunciado: Crie uma função que receba o peso e a altura de uma pessoa e retorne o valor do IMC (Peso / Altura²).
+# O resultado define faixas de peso: abaixo de 18,5 (abaixo do peso), 18,5-24,9 (normal), 25-29,9 (sobrepeso), e \(\ge 30\) (obesidade).
+
+# def calcular_imc(peso: float, altura: float) -> str:
+#     valor_imc = peso / (altura ** 2)
+
+#     if valor_imc < 18.5:
+#         msg_imc = 'Abaixo do pedo'
+#     elif valor_imc <= 24.9:
+#         msg_imc = 'Normal'
+#     elif valor_imc <= 29.9:
+#         msg_imc = 'Sobrepeso'
+#     else:
+#         msg_imc = 'Obresidade'
+
+#     return f'Seu imc é {valor_imc:.2f} e sua classificação é {msg_imc}'
+
+
+# def main():
+#     try:
+#         peso = float(input('Digite seu peso: '))
+#         altura = float(input('Digite a sua altura: '))
+
+#         resultado = calcular_imc(peso, altura)
+#         print(resultado)
+
+#     except ValueError:
+#         print('Erro: digite apenas números!')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
 
 # 18. [NOME: quem_e_o_maior]
 # Enunciado: Escreva uma função que receba dois números e retorne qual deles é o maior. Se forem iguais, retorne qualquer um.
+
+
+
 
 # 19. [NOME: tamanho_do_nome]
 # Enunciado: Crie uma função que receba uma string (texto) e retorne a quantidade de caracteres que ela possui.
@@ -403,4 +473,3 @@ if __name__ == '__main__':
 # 25. [NOME: operacao_matematica]
 # Enunciado: Crie uma função que receba dois números e uma string representando a operação ("+", "-", "*", "/").
 # A função deve realizar o cálculo e exibir o resultado final.
-
