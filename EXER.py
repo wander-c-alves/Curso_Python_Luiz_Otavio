@@ -554,22 +554,21 @@
 # 22. [NOME: criar_lista_pares]
 # Enunciado: Escreva uma função que receba um número limite e imprima todos os números pares de 0 até o limite informado.
 
-
 # def lista_pares(limite: int) -> None:
 #     for numero in range(0, limite + 1, 2):
 #         print(numero)
-
-
+        
+        
 # def main():
-
+    
 #     try:
-#         limite = int(input('Digite um numero: '))
+#         limite = int(input('Digite um numero:'))
 #         lista_pares(limite)
-
+        
 #     except ValueError:
-#         print('Erro: Digite apenas numeros"')
-
-
+#         print('Erro: Digite somente números')
+        
+        
 # if __name__ == '__main__':
 #     main()
 
@@ -609,6 +608,22 @@
 
 # 24. [NOME: inverter_texto]
 # Enunciado: Escreva uma função que receba uma palavra e a imprima de trás para frente (invertida).
+
+def inverter_texto(palavra: str) -> None:
+    print(palavra[::-1])
+    
+def main():
+    palavra = input('Digite uma palavra: ')
+    if not palavra.strip():
+        print('Erro: Digite algo')
+        return
+          
+    resultado = inverter_texto(palavra)
+    print(resultado)
+    
+    
+if __name__ == '__main':
+    main()
 
 
 # 25. [NOME: operacao_matematica]
