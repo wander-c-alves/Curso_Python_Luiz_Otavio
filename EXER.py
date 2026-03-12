@@ -448,55 +448,170 @@
 # 18. [NOME: quem_e_o_maior]
 # Enunciado: Escreva uma função que receba dois números e retorne qual deles é o maior. Se forem iguais, retorne qualquer um.
 
-def quem_e_o_maior(n1: int, n2: int) -> int:
-    
-    if n1 > n2:
-        maior = n1
-    else:
-        maior = n2
+# def quem_e_o_maior(n1: int, n2: int) -> int:
 
-    return maior
+#     if n1 > n2:
+#         maior = n1
+#     else:
+#         maior = n2
+
+#     return maior
 
 
-def main():
-    
-    try: 
-        n1 = int(input('Digite o primeiro número:'))
-        n2 = int(input('Digite o segundo número: '))
-        
-        resultado = quem_e_o_maior(n1, n2)
-        if n1 == n2:
-            print(f'Os números são iguais: {resultado}')
-        else:
-            print(f'O número maior é: {resultado}')
-        
-    except ValueError:
-        print('Erro: Digite apenas numeros inteiros!')
-        
+# def main():
 
-if __name__ == '__main__':
-    main()
+#     try:
+#         n1 = int(input('Digite o primeiro número:'))
+#         n2 = int(input('Digite o segundo número: '))
+
+#         resultado = quem_e_o_maior(n1, n2)
+#         if n1 == n2:
+#             print(f'Os números são iguais: {resultado}')
+#         else:
+#             print(f'O número maior é: {resultado}')
+
+#     except ValueError:
+#         print('Erro: Digite apenas numeros inteiros!')
+
+
+# if __name__ == '__main__':
+#     main()
+
 
 
 # 19. [NOME: tamanho_do_nome]
 # Enunciado: Crie uma função que receba uma string (texto) e retorne a quantidade de caracteres que ela possui.
 
+# def tamanho_nome(nome: str) -> int:
+#     quantidade = len(nome)
+#     return quantidade
+
+
+# def main():
+#     nome = input('Digite seu nome: ')
+#     if nome.strip().isdigit() or nome == '':
+#         print('Erro: não pode ser somente numeros ou estar em branco')
+#         return
+#     resultado = tamanho_nome(nome)
+#     print(f' O nome {nome} tem {resultado} caracteres')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
 # 20. [NOME: gerar_preco_com_desconto]
 # Enunciado: Escreva uma função que receba o valor de um produto e a porcentagem de desconto (ex: 10 para 10%).
 # Retorne o valor final do produto com o desconto aplicado.
 
+# def gerar_desconto(preco: float, desconto: float) -> float:
+#     valor_final = preco - (preco * (desconto / 100))
+#     return valor_final
+
+
+# def main():
+#     try:
+#         preco = float(input('Digite o valor do produto: '))
+#         desconto = float(input('Digite o valor do desconto: '))
+
+#         resultado = gerar_desconto(preco, desconto)
+#         print(f' O valor de {preco} reais com {desconto} % de desconto é: {resultado:.2f}' )
+
+#     except ValueError:
+#         print('Erro: digite apenas numeros! ')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+
 # 21. [NOME: celsius_para_fahrenheit]
 # Enunciado: Crie uma função que receba uma temperatura em graus Celsius e retorne a conversão para Fahrenheit. (Fórmula: F = C * 1.8 + 32)
+
+# def celsius_fahrenheit(celsius: float) -> float:
+#     fahrenheit = (celsius * 1.8) + 32
+#     return fahrenheit
+
+
+# def main():
+
+#     try:
+#         celsius = float(input('Digite a temperatura em graus celsius: '))
+#         resultado = celsius_fahrenheit(celsius)
+#         print(resultado)
+
+#     except ValueError:
+#         print('Erro: Digite apenas numeros!')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+
 
 # 22. [NOME: criar_lista_pares]
 # Enunciado: Escreva uma função que receba um número limite e imprima todos os números pares de 0 até o limite informado.
 
+
+# def lista_pares(limite: int) -> None:
+#     for numero in range(0, limite + 1, 2):
+#         print(numero)
+
+
+# def main():
+
+#     try:
+#         limite = int(input('Digite um numero: '))
+#         lista_pares(limite)
+
+#     except ValueError:
+#         print('Erro: Digite apenas numeros"')
+
+
+# if __name__ == '__main__':
+#     main()
+
+
 # 23. [NOME: validar_acesso]
-# Enunciado: Crie uma função que receba uma string de senha. Se for igual a "python123", retorne "Acesso Liberado". Caso contrário, retorne "Acesso Negado".
+# Enunciado: Crie uma função que receba uma string de senha. Se for igual a "python123",
+# retorne "Acesso Liberado". Caso contrário, retorne "Acesso Negado".
+
+# def validar_acesso(senha_digitada: str) -> str:
+#     # Definimos a senha correta como uma "Constante" (Regra 1 do seu perfil!)
+#     SENHA_CORRETA = "python123"
+
+#     if senha_digitada == SENHA_CORRETA:
+#         validacao = 'Acesso Liberado'
+#     else:
+#         validacao = 'Acesso Negado'
+
+#     return validacao
+
+
+# def main():
+#     senha = input('Digite a sua senha: ')
+
+#     # Validamos apenas se está vazio (o único erro real de entrada aqui)
+#     if not senha.strip():
+#         print('Erro: A senha não pode estar em branco!')
+#         return
+
+#     # A função faz a checagem
+#     resultado = validar_acesso(senha)
+#     print(resultado)
+
+
+# if __name__ == '__main__':
+#     main()
+
 
 # 24. [NOME: inverter_texto]
 # Enunciado: Escreva uma função que receba uma palavra e a imprima de trás para frente (invertida).
 
+
 # 25. [NOME: operacao_matematica]
 # Enunciado: Crie uma função que receba dois números e uma string representando a operação ("+", "-", "*", "/").
 # A função deve realizar o cálculo e exibir o resultado final.
+
