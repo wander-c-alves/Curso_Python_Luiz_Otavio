@@ -1,5 +1,5 @@
 # TÓPICO 01 – FUNÇÕES (def)
-# 📌 O que é uma função?
+# O que é uma função?
 # Uma função é um bloco de código que executa uma tarefa específica.
 # Pense nela como uma “ máquina”:
 # • Você dá uma entrada
@@ -609,24 +609,56 @@
 # 24. [NOME: inverter_texto]
 # Enunciado: Escreva uma função que receba uma palavra e a imprima de trás para frente (invertida).
 
-def inverter_texto(palavra: str) -> None:
-    print(palavra[::-1])
+# def inverter_texto(palavra: str) -> None:
+#     print(palavra[::-1])
     
-def main():
-    palavra = input('Digite uma palavra: ')
-    if not palavra.strip():
-        print('Erro: Digite algo')
-        return
+    
+# def main():
+#     palavra = input('Digite uma palavra: ')
+#     if not palavra.strip():
+#         print('Erro: Digite algo')
+#         return
           
-    resultado = inverter_texto(palavra)
-    print(resultado)
+#     inverter_texto(palavra)
+        
     
-    
-if __name__ == '__main':
-    main()
+# if __name__ == '__main__':
+#     main()
 
 
 # 25. [NOME: operacao_matematica]
 # Enunciado: Crie uma função que receba dois números e uma string representando a operação ("+", "-", "*", "/").
 # A função deve realizar o cálculo e exibir o resultado final.
 
+def operacao_matematica(n1: float, operacao: str, n2: float) -> None:
+    
+    if operacao == '+':
+        print(f'Resultado: {n1 + n2}')
+    elif operacao == '-':
+        print(f'Resultado: {n1 - n2}')
+    elif operacao == '*':
+        print(f'Resultado: {n1 * n2}')
+    elif operacao == '/':
+        if n2 == 0:
+            print("Erro: Divisão por zero não permitida!")
+        else:
+            print(f"Resultado: {n1 / n2}")
+    else:
+        print('Operacão invalida')
+        
+        
+def main():
+    
+    try:
+        n1 = float(input('Digite o primeiro número: '))
+        operacao = input('Digite o operador: ')
+        n2 = float(input('Digite o segundo número'))
+    
+        operacao_matematica(n1, operacao, n2)
+        
+    except ValueError:
+        print('Erro: Digite apenas numeros')
+    
+    
+if __name__ == '__main__':
+    main()
