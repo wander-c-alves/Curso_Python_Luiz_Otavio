@@ -1,5 +1,5 @@
 def pedir_numero(mensagem):
-    """Pede um número ao usuário até receber um float válido ou um comando de saída"""
+    """Pede um número ao usuário até receber um float válido ou um comando de saídas"""
     while True:
         entrada = input(mensagem).strip()
         if entrada.lower() in ('sair', 'q'):    # permite sair digitando 'sair' ou 'q'
