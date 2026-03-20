@@ -1,4 +1,4 @@
-# TÓPICO 01 – FUNÇÕES (def)
+# TÓPICO 01 – FUNÇÕES (def).
 # O que é uma função?
 # Uma função é um bloco de código que executa uma tarefa específica.
 # Pense nela como uma “ máquina”:
