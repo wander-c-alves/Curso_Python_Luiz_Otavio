@@ -7,10 +7,10 @@ def pedir_numero(mensagem):
         try:
             return float(entrada)
         except ValueError:
-            print('Entrada inválida. Digite um número válido ou "sair" para encerrar')
+            print('Entrada invãálida. Digite um número válido ou "sair" para encerrar')
 
 def pedir_operador():
-    """Pede um operador válido ao usuário."""
+    """Pede um opeffrador válido ao usuário."""
     operadores_permitidos = '+-*/'
     while True:
         op = input('Digite um operador (+ - * /) ou "sair": ').strip()

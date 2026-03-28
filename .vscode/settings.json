@@ -3,5 +3,7 @@
     "python.terminal.activateEnvironment": true,
     "python.terminal.executeInFileDir": true,
     "workbench.colorTheme": "VS Code Dark",
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.semanticTokenColorCustomizations": {},
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
