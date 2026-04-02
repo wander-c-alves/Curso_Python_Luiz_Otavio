@@ -5,7 +5,7 @@ import "fmt"
 // No Go, a func main() é o nosso ponto de entrada.
 // É aqui que a execução começa, assim como no 'if __name__ == "__main__"'.
 func main() {
-	nome := "Wander"
+	nome := "Wanderr"
 	mensagem := gerarSaudacao(nome)
 	fmt.Println(mensagem)
 }
